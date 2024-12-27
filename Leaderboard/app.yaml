@@ -1,0 +1,12 @@
+runtime: python39
+
+env_variables:
+  DJANGO_SETTINGS_MODULE: 'Leaderboard.settings'
+  APPENGINE_URL: PROJECT_ID.uc.r.appspot.com  # Replace PROJECT_ID with your Google Cloud project ID
+
+handlers:
+- url: /static
+  static_dir: staticfiles/
+
+- url: /.*
+  script: auto 

@@ -1,0 +1,4 @@
+Django>=4.2
+google-cloud-secret-manager
+django-environ
+gunicorn 
